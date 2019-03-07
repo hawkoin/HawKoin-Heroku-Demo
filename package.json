@@ -1,0 +1,18 @@
+{
+  "name": "hawkoinsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "ejs": "^2.3.3",
+    "express": "^5.0.0-alpha.2",
+    "morgan": "^1.6.1",
+    "request": "^2.88.0"
+  }
+}

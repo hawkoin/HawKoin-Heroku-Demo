@@ -1,19 +1,35 @@
-<% include header %>
-<!-- <% if (entries.length) { %>
-  <% entries.forEach(function(entry) { %>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="text-muted pull-right">
-          <%= entry.published %>
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Hawkoin</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+    <style>
+        body {
+            padding-top: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+        <div class="jumbotron text-center">
+            <h1><span class="fa fa-lock"></span>Hawkoin</h1>
+
+            <p>Login with:</p>
+            <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
         </div>
-        <%= entry.title %>
-      </div>
-      <div class="panel-body">
-        <%= entry.body %>
-      </div>
+        
+
+
     </div>
-  <% }) %>
-<% } else { %>   No entries! <a href="/new-entry">Add one!</a>
-<% } %> -->
-<a target="_blank" href="https://accounts.google.com/signin/oauth/identifier?client_id=407408718192.apps.googleusercontent.com&as=herztbQj65i4w-bCgvQdhA&destination=https%3A%2F%2Fdevelopers.google.com&approval_state=!ChRhMWhUOVhUN2JYNkdsNTA2VVVqWRIfdzd0R3E1VEtvdzRXc0NEZU1wUEotOWJKbk5pLWRSWQ∙APNbktkAAAAAXABGoZ1onTTjAEcpk8u4uf-qFEAz38Dc&oauthgdpr=1&xsrfsig=AHgIfE8ro9fN1Rzh3L040OGVdiG8r0wphw&flowName=GeneralOAuthFlow">Get your access token!</a>
-<% include footer %>
+</body>
+
+</html>

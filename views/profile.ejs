@@ -1,0 +1,81 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-header text-center">
+            <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+            <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        </div>
+
+
+
+
+        <form method="post" role="form">
+            <!-- <div class="form-group">
+                <label for="id">Your ID</label>
+                <input type="text" class="form-control" id="id" name="id" placeholder="id" required>
+            </div>
+            <div class="form-group">
+                <label for="Auth Token">Title</label>
+                <input type="text" class="form-control" id="auth" name="auth" placeholder="auth token" required>
+            </div> -->
+            <div class="form-group">
+                <label for="vid">Vendor ID</label>
+                <input type="text" class="form-control" id="vid" name="vid" placeholder="vendor id" required>
+            </div>
+            <div class="form-group">
+                <label for="amt">Amount</label>
+                <input type="text" class="form-control" id="amt" name="amt" placeholder="amount" required>
+                <div class="form-group">
+                    <input type="submit" value="Post entry" class="btn btn-primary">
+                </div>
+        </form>
+
+
+        <div class="row">
+
+            <!-- GOOGLE INFORMATION -->
+            <div class="col-sm-6">
+                <div class="well">
+                    <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google</h3>
+
+                    <p>
+                        <strong>id</strong>:
+                        <%= user.google.id %><br>
+                        <strong>token</strong>:
+                        <%= user.google.token %><br>
+                        <strong>email</strong>:
+                        <%= user.google.email %><br>
+                        <strong>name</strong>:
+                        <%= user.google.name %><br>
+                        <strong>Your Balance is</strong>:
+                        <%= body.balance %>
+                        <strong>Status</strong>:
+                        <%= body.code %><br>
+                        <strong>Low Balance Threshold</strong>:
+                        <%= body.lowBalThreshold %>
+                        <strong>Txn Limit</strong>:
+                        <%= body.txnThreshold %><br>
+                </div>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
